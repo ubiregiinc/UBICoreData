@@ -8,22 +8,36 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "SampleDataManager.h"
+#import "Book.h"
 
-@interface MasterViewController ()
+@interface MasterViewController () <NSFetchedResultsControllerDelegate>
 
-@property NSMutableArray *objects;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic) SampleDataManager *dataStoreController;
+
 @end
 
 @implementation MasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    self.dataStoreController = [SampleDataManager sharedManager];
+    NSManagedObjectContext *context = self.dataStoreController.dataStore.mainContext;
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntity:[Book class] context:context];
+    [request sortByKey:@"title" ascending:YES];
+    self.fetchedResultsController = [NSFetchedResultsController controllerWithRequest:request context:context];
+    self.fetchedResultsController.delegate = self;
+    
+    [self.fetchedResultsController performFetch:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -33,16 +47,12 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    Book *book = [Book insertInContext:self.dataStoreController.dataStore.mainContext];
+    [self.dataStoreController.dataStore.mainContext saveToPersistentStore];
+    book.title = [[NSDate date] description];
 }
 
 #pragma mark - Segues
@@ -50,9 +60,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
+        NSString *title = [self bookForIndexPath:indexPath].title;
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
+        [controller setDetailItem:title];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -61,33 +71,38 @@
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.fetchedResultsController.sections.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return [self.fetchedResultsController numberOfObjectsInSection:0];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    cell.textLabel.text = [self bookForIndexPath:indexPath].title;
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        [[self bookForIndexPath:indexPath] delete];
+        [self.dataStoreController.dataStore.mainContext saveToPersistentStore];
     }
+}
+
+- (Book *)bookForIndexPath:(NSIndexPath *)indexPath
+{
+    return self.fetchedResultsController.sections[0].objects[indexPath.row];
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 @end

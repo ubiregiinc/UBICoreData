@@ -16,6 +16,15 @@
 		1AED9E591C0C386300082D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AED9E571C0C386300082D17 /* LaunchScreen.storyboard */; };
 		1AED9E641C0C386400082D17 /* UBICoreDataSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E631C0C386400082D17 /* UBICoreDataSampleTests.m */; };
 		1AED9E6F1C0C386400082D17 /* UBICoreDataSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E6E1C0C386400082D17 /* UBICoreDataSampleUITests.m */; };
+		1AED9E7E1C0C391F00082D17 /* SampleDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E7D1C0C391F00082D17 /* SampleDataManager.m */; };
+		1AED9E8D1C0C393500082D17 /* NSFetchedResultsController+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E821C0C393500082D17 /* NSFetchedResultsController+UBICoreData.m */; };
+		1AED9E8E1C0C393500082D17 /* NSFetchRequest+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E841C0C393500082D17 /* NSFetchRequest+UBICoreData.m */; };
+		1AED9E8F1C0C393500082D17 /* NSManagedObject+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E861C0C393500082D17 /* NSManagedObject+UBICoreData.m */; };
+		1AED9E901C0C393500082D17 /* NSManagedObjectContext+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E881C0C393500082D17 /* NSManagedObjectContext+UBICoreData.m */; };
+		1AED9E911C0C393500082D17 /* UBICoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E8C1C0C393500082D17 /* UBICoreDataStore.m */; };
+		1AED9E941C0C396C00082D17 /* Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E921C0C396C00082D17 /* Sample.xcdatamodeld */; };
+		1AED9E991C0C3A0000082D17 /* Book+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E961C0C3A0000082D17 /* Book+CoreDataProperties.m */; };
+		1AED9E9A1C0C3A0000082D17 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AED9E981C0C3A0000082D17 /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,25 @@
 		1AED9E6A1C0C386400082D17 /* UBICoreDataSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBICoreDataSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AED9E6E1C0C386400082D17 /* UBICoreDataSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataSampleUITests.m; sourceTree = "<group>"; };
 		1AED9E701C0C386400082D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AED9E7C1C0C391F00082D17 /* SampleDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDataManager.h; sourceTree = "<group>"; };
+		1AED9E7D1C0C391F00082D17 /* SampleDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDataManager.m; sourceTree = "<group>"; };
+		1AED9E811C0C393500082D17 /* NSFetchedResultsController+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+UBICoreData.h"; sourceTree = "<group>"; };
+		1AED9E821C0C393500082D17 /* NSFetchedResultsController+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+UBICoreData.m"; sourceTree = "<group>"; };
+		1AED9E831C0C393500082D17 /* NSFetchRequest+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+UBICoreData.h"; sourceTree = "<group>"; };
+		1AED9E841C0C393500082D17 /* NSFetchRequest+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+UBICoreData.m"; sourceTree = "<group>"; };
+		1AED9E851C0C393500082D17 /* NSManagedObject+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+UBICoreData.h"; sourceTree = "<group>"; };
+		1AED9E861C0C393500082D17 /* NSManagedObject+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+UBICoreData.m"; sourceTree = "<group>"; };
+		1AED9E871C0C393500082D17 /* NSManagedObjectContext+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+UBICoreData.h"; sourceTree = "<group>"; };
+		1AED9E881C0C393500082D17 /* NSManagedObjectContext+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+UBICoreData.m"; sourceTree = "<group>"; };
+		1AED9E891C0C393500082D17 /* UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreData.h; sourceTree = "<group>"; };
+		1AED9E8A1C0C393500082D17 /* UBICoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataCommon.h; sourceTree = "<group>"; };
+		1AED9E8B1C0C393500082D17 /* UBICoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataStore.h; sourceTree = "<group>"; };
+		1AED9E8C1C0C393500082D17 /* UBICoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataStore.m; sourceTree = "<group>"; };
+		1AED9E931C0C396C00082D17 /* Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample.xcdatamodel; sourceTree = "<group>"; };
+		1AED9E951C0C3A0000082D17 /* Book+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Book+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1AED9E961C0C3A0000082D17 /* Book+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Book+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1AED9E971C0C3A0000082D17 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		1AED9E981C0C3A0000082D17 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +132,20 @@
 		1AED9E451C0C386300082D17 /* UBICoreDataSample */ = {
 			isa = PBXGroup;
 			children = (
+				1AED9E801C0C393500082D17 /* UBICoreData */,
 				1AED9E491C0C386300082D17 /* AppDelegate.h */,
 				1AED9E4A1C0C386300082D17 /* AppDelegate.m */,
 				1AED9E4C1C0C386300082D17 /* MasterViewController.h */,
 				1AED9E4D1C0C386300082D17 /* MasterViewController.m */,
 				1AED9E4F1C0C386300082D17 /* DetailViewController.h */,
 				1AED9E501C0C386300082D17 /* DetailViewController.m */,
+				1AED9E7C1C0C391F00082D17 /* SampleDataManager.h */,
+				1AED9E7D1C0C391F00082D17 /* SampleDataManager.m */,
+				1AED9E951C0C3A0000082D17 /* Book+CoreDataProperties.h */,
+				1AED9E961C0C3A0000082D17 /* Book+CoreDataProperties.m */,
+				1AED9E971C0C3A0000082D17 /* Book.h */,
+				1AED9E981C0C3A0000082D17 /* Book.m */,
+				1AED9E921C0C396C00082D17 /* Sample.xcdatamodeld */,
 				1AED9E521C0C386300082D17 /* Main.storyboard */,
 				1AED9E551C0C386300082D17 /* Assets.xcassets */,
 				1AED9E571C0C386300082D17 /* LaunchScreen.storyboard */,
@@ -143,6 +179,26 @@
 				1AED9E701C0C386400082D17 /* Info.plist */,
 			);
 			path = UBICoreDataSampleUITests;
+			sourceTree = "<group>";
+		};
+		1AED9E801C0C393500082D17 /* UBICoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1AED9E811C0C393500082D17 /* NSFetchedResultsController+UBICoreData.h */,
+				1AED9E821C0C393500082D17 /* NSFetchedResultsController+UBICoreData.m */,
+				1AED9E831C0C393500082D17 /* NSFetchRequest+UBICoreData.h */,
+				1AED9E841C0C393500082D17 /* NSFetchRequest+UBICoreData.m */,
+				1AED9E851C0C393500082D17 /* NSManagedObject+UBICoreData.h */,
+				1AED9E861C0C393500082D17 /* NSManagedObject+UBICoreData.m */,
+				1AED9E871C0C393500082D17 /* NSManagedObjectContext+UBICoreData.h */,
+				1AED9E881C0C393500082D17 /* NSManagedObjectContext+UBICoreData.m */,
+				1AED9E891C0C393500082D17 /* UBICoreData.h */,
+				1AED9E8A1C0C393500082D17 /* UBICoreDataCommon.h */,
+				1AED9E8B1C0C393500082D17 /* UBICoreDataStore.h */,
+				1AED9E8C1C0C393500082D17 /* UBICoreDataStore.m */,
+			);
+			name = UBICoreData;
+			path = ../../UBICoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AED9E9A1C0C3A0000082D17 /* Book.m in Sources */,
+				1AED9E8E1C0C393500082D17 /* NSFetchRequest+UBICoreData.m in Sources */,
 				1AED9E4B1C0C386300082D17 /* AppDelegate.m in Sources */,
+				1AED9E991C0C3A0000082D17 /* Book+CoreDataProperties.m in Sources */,
+				1AED9E941C0C396C00082D17 /* Sample.xcdatamodeld in Sources */,
 				1AED9E4E1C0C386300082D17 /* MasterViewController.m in Sources */,
+				1AED9E911C0C393500082D17 /* UBICoreDataStore.m in Sources */,
+				1AED9E8F1C0C393500082D17 /* NSManagedObject+UBICoreData.m in Sources */,
+				1AED9E7E1C0C391F00082D17 /* SampleDataManager.m in Sources */,
+				1AED9E8D1C0C393500082D17 /* NSFetchedResultsController+UBICoreData.m in Sources */,
 				1AED9E481C0C386300082D17 /* main.m in Sources */,
+				1AED9E901C0C393500082D17 /* NSManagedObjectContext+UBICoreData.m in Sources */,
 				1AED9E511C0C386300082D17 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +587,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AED9E921C0C396C00082D17 /* Sample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AED9E931C0C396C00082D17 /* Sample.xcdatamodel */,
+			);
+			currentVersion = 1AED9E931C0C396C00082D17 /* Sample.xcdatamodel */;
+			path = Sample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1AED9E3B1C0C386300082D17 /* Project object */;
 }
