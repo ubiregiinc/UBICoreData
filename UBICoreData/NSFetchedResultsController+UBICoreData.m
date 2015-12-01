@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)controllerWithRequest:(NSFetchRequest *)request
                               context:(NSManagedObjectContext *)context
-                   sectionNameKeyPath:(NSString *)keyPath
-                            cacheName:(NSString *)cacheName
+                   sectionNameKeyPath:(nullable NSString *)keyPath
+                            cacheName:(nullable NSString *)cacheName
 {
     return [[self alloc] initWithFetchRequest:request
                          managedObjectContext:context

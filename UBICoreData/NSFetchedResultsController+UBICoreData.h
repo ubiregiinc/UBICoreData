@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
                               context:(NSManagedObjectContext *)context;
 + (instancetype)controllerWithRequest:(NSFetchRequest *)request
                               context:(NSManagedObjectContext *)context
-                   sectionNameKeyPath:(NSString *)keyPath
-                            cacheName:(NSString *)cacheName;
+                   sectionNameKeyPath:(nullable NSString *)keyPath
+                            cacheName:(nullable NSString *)cacheName;
 
 - (NSInteger)numberOfObjectsInSection:(NSInteger)section;
 
