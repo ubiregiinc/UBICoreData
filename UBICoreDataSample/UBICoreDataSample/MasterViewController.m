@@ -14,7 +14,7 @@
 @interface MasterViewController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic) SampleDataManager *dataStoreController;
+@property (nonatomic) SampleDataManager *dataManager;
 
 @end
 
@@ -29,8 +29,8 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-    self.dataStoreController = [SampleDataManager sharedManager];
-    NSManagedObjectContext *context = self.dataStoreController.dataStore.mainContext;
+    self.dataManager = [SampleDataManager sharedManager];
+    NSManagedObjectContext *context = self.dataManager.dataStore.mainContext;
     
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntity:[Book class] context:context];
     [request sortByKey:@"title" ascending:YES];
@@ -50,8 +50,8 @@
 }
 
 - (void)insertNewObject:(id)sender {
-    Book *book = [Book insertInContext:self.dataStoreController.dataStore.mainContext];
-    [self.dataStoreController.dataStore.mainContext saveToPersistentStore];
+    Book *book = [Book insertInContext:self.dataManager.dataStore.mainContext];
+    [self.dataManager.dataStore.mainContext saveToPersistentStore];
     book.title = [[NSDate date] description];
 }
 
@@ -91,7 +91,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [[self bookForIndexPath:indexPath] delete];
-        [self.dataStoreController.dataStore.mainContext saveToPersistentStore];
+        [self.dataManager.dataStore.mainContext saveToPersistentStore];
     }
 }
 
