@@ -6,6 +6,7 @@
 //
 
 #import "NSManagedObjectContext+UBICoreData.h"
+#import "UBICoreDataCommon.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -50,7 +51,11 @@ NS_ASSUME_NONNULL_BEGIN
     NSSet *insertedObjects = self.insertedObjects;
     if (insertedObjects.count > 0) {
         NSError *error = nil;
-        NSAssert([self obtainPermanentIDsForObjects:insertedObjects.allObjects error:&error], @"%s - error: %@", __PRETTY_FUNCTION__, error);
+        if (![self obtainPermanentIDsForObjects:insertedObjects.allObjects error:&error]) {
+#ifdef DEBUG
+            [NSException raise:UBICoreDataExceptionName format:@"%s - error: %@", __PRETTY_FUNCTION__, error];
+#endif
+        }
     }
     
     if ([self save]) {

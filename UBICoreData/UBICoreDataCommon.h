@@ -17,3 +17,5 @@
     } else { \
         NSAssert(0, @"invalid predicate: %@", predicateOrString); \
     }
+
+static NSString * const UBICoreDataExceptionName = @"UBICoreDataException";

@@ -6,6 +6,7 @@
 //
 
 #import "UBICoreDataStore.h"
+#import "UBICoreDataCommon.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -86,10 +87,14 @@ NS_ASSUME_NONNULL_BEGIN
         _storeCoordinator = storeCoordinator;
         
         NSError* error = nil;
-        NSAssert([_storeCoordinator addPersistentStoreWithType:self.persistentStoreType
-                                                 configuration:nil URL:self.storeURL
-                                                       options:self.persistentStoreOptions
-                                                         error:&error], @"%s - error: %@", __PRETTY_FUNCTION__, error);
+        if (![_storeCoordinator addPersistentStoreWithType:self.persistentStoreType
+                                                      configuration:nil URL:self.storeURL
+                                                            options:self.persistentStoreOptions
+                                                    error:&error]) {
+#ifdef DEBUG
+            [NSException raise:UBICoreDataExceptionName format:@"%s - error: %@", __PRETTY_FUNCTION__, error];
+#endif
+        }
     }
     
     return _storeCoordinator;
