@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)storePath
 {
-    return [self.storeURL absoluteString];
+    return [self.storeURL path];
 }
 
 - (BOOL)storeExists
