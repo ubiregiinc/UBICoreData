@@ -6,4 +6,4 @@ branches:
 notifications:
   email: false
 script:
-  - xcodebuild -project UBICoreDataTest/UBICoreDataTest.xcodeproj -scheme UBICoreDataTest -configuration Release OBJROOT=build -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test
+  - xcodebuild -project UBICoreDataTest/UBICoreDataTest.xcodeproj -scheme UBICoreDataTest -configuration Debug OBJROOT=build -sdk iphonesimulator clean test
