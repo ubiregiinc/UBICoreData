@@ -9,35 +9,21 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AE3C2D31C0D8BB0000E3FB5"
-               BuildableName = "UBICoreDataTest.xctest"
+               BlueprintIdentifier = "1AE3C38F1C10547A000E3FB5"
+               BuildableName = "UBICoreDataTest.app"
                BlueprintName = "UBICoreDataTest"
-               ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AE3C3241C0EFB29000E3FB5"
-               BuildableName = "UBICoreDataApp.app"
-               BlueprintName = "UBICoreDataApp"
                ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
@@ -47,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AE3C2D31C0D8BB0000E3FB5"
-               BuildableName = "UBICoreDataTest.xctest"
-               BlueprintName = "UBICoreDataTest"
+               BlueprintIdentifier = "1AE3C3A81C10547A000E3FB5"
+               BuildableName = "UBICoreDataTestTests.xctest"
+               BlueprintName = "UBICoreDataTestTests"
                ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +43,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AE3C2D31C0D8BB0000E3FB5"
-            BuildableName = "UBICoreDataTest.xctest"
+            BlueprintIdentifier = "1AE3C38F1C10547A000E3FB5"
+            BuildableName = "UBICoreDataTest.app"
             BlueprintName = "UBICoreDataTest"
             ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
          </BuildableReference>
@@ -80,9 +66,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AE3C3241C0EFB29000E3FB5"
-            BuildableName = "UBICoreDataApp.app"
-            BlueprintName = "UBICoreDataApp"
+            BlueprintIdentifier = "1AE3C38F1C10547A000E3FB5"
+            BuildableName = "UBICoreDataTest.app"
+            BlueprintName = "UBICoreDataTest"
             ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,15 +81,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1AE3C2D31C0D8BB0000E3FB5"
-            BuildableName = "UBICoreDataTest.xctest"
+            BlueprintIdentifier = "1AE3C38F1C10547A000E3FB5"
+            BuildableName = "UBICoreDataTest.app"
             BlueprintName = "UBICoreDataTest"
             ReferencedContainer = "container:UBICoreDataTest.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

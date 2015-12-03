@@ -7,84 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AE3C3001C0DA04B000E3FB5 /* UBICoreDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2FF1C0DA04B000E3FB5 /* UBICoreDataStoreTests.m */; };
-		1AE3C30F1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C30E1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.m */; };
-		1AE3C3291C0EFB29000E3FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3281C0EFB29000E3FB5 /* main.m */; };
-		1AE3C3341C0EFB29000E3FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C3331C0EFB29000E3FB5 /* Assets.xcassets */; };
-		1AE3C3371C0EFB29000E3FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C3351C0EFB29000E3FB5 /* LaunchScreen.storyboard */; };
-		1AE3C3421C0EFC36000E3FB5 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2EF1C0D9F38000E3FB5 /* TestModel.xcdatamodeld */; };
-		1AE3C3441C0F07C4000E3FB5 /* NSManagedObjectContext+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3431C0F07C4000E3FB5 /* NSManagedObjectContext+UBICoreDataTests.m */; };
-		1AE3C34A1C0F0B88000E3FB5 /* NSFetchedResultsController+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2DF1C0D8BC5000E3FB5 /* NSFetchedResultsController+UBICoreData.m */; };
-		1AE3C34B1C0F0B88000E3FB5 /* NSFetchRequest+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2E11C0D8BC5000E3FB5 /* NSFetchRequest+UBICoreData.m */; };
-		1AE3C34C1C0F0B88000E3FB5 /* NSManagedObject+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2E31C0D8BC5000E3FB5 /* NSManagedObject+UBICoreData.m */; };
-		1AE3C34D1C0F0B88000E3FB5 /* NSManagedObjectContext+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2E51C0D8BC5000E3FB5 /* NSManagedObjectContext+UBICoreData.m */; };
-		1AE3C34E1C0F0B88000E3FB5 /* UBICoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C2E91C0D8BC5000E3FB5 /* UBICoreDataStore.m */; };
-		1AE3C34F1C0F0B88000E3FB5 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3021C0DA070000E3FB5 /* Child.m */; };
-		1AE3C3501C0F0B88000E3FB5 /* Child+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3041C0DA070000E3FB5 /* Child+CoreDataProperties.m */; };
-		1AE3C3511C0F0B88000E3FB5 /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3061C0DA070000E3FB5 /* Parent.m */; };
-		1AE3C3521C0F0B88000E3FB5 /* Parent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3081C0DA070000E3FB5 /* Parent+CoreDataProperties.m */; };
-		1AE3C3541C0FE63E000E3FB5 /* NSManagedObject+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3531C0FE63E000E3FB5 /* NSManagedObject+UBICoreDataTests.m */; };
-		1AE3C3561C100EFE000E3FB5 /* NSFetchRequest+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3551C100EFE000E3FB5 /* NSFetchRequest+UBICoreDataTests.m */; };
-		1AE3C3581C101AE2000E3FB5 /* NSFetchedResultsController+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3571C101AE2000E3FB5 /* NSFetchedResultsController+UBICoreDataTests.m */; };
+		1A087B781C10583800CAB9B4 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B711C10583800CAB9B4 /* Child.m */; };
+		1A087B791C10583800CAB9B4 /* Child+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B731C10583800CAB9B4 /* Child+CoreDataProperties.m */; };
+		1A087B7A1C10583800CAB9B4 /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B751C10583800CAB9B4 /* Parent.m */; };
+		1A087B7B1C10583800CAB9B4 /* Parent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B771C10583800CAB9B4 /* Parent+CoreDataProperties.m */; };
+		1A087B831C10584200CAB9B4 /* NSFetchedResultsController+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B7C1C10584200CAB9B4 /* NSFetchedResultsController+UBICoreDataTests.m */; };
+		1A087B841C10584200CAB9B4 /* NSFetchRequest+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B7D1C10584200CAB9B4 /* NSFetchRequest+UBICoreDataTests.m */; };
+		1A087B851C10584200CAB9B4 /* NSManagedObject+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B7E1C10584200CAB9B4 /* NSManagedObject+UBICoreDataTests.m */; };
+		1A087B861C10584200CAB9B4 /* NSManagedObjectContext+UBICoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B7F1C10584200CAB9B4 /* NSManagedObjectContext+UBICoreDataTests.m */; };
+		1A087B871C10584200CAB9B4 /* UBICoreDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B801C10584200CAB9B4 /* UBICoreDataStoreTests.m */; };
+		1A087B881C10584200CAB9B4 /* UBICoreDataTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A087B821C10584200CAB9B4 /* UBICoreDataTestUtils.m */; };
+		1AE3C3951C10547A000E3FB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3941C10547A000E3FB5 /* main.m */; };
+		1AE3C3A01C10547A000E3FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C39F1C10547A000E3FB5 /* Assets.xcassets */; };
+		1AE3C3A31C10547A000E3FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3C3A11C10547A000E3FB5 /* LaunchScreen.storyboard */; };
+		1AE3C3C51C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3BA1C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.m */; };
+		1AE3C3C61C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3BC1C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.m */; };
+		1AE3C3C71C1054F1000E3FB5 /* NSManagedObject+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3BE1C1054F1000E3FB5 /* NSManagedObject+UBICoreData.m */; };
+		1AE3C3C81C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3C01C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.m */; };
+		1AE3C3C91C1054F1000E3FB5 /* UBICoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3C41C1054F1000E3FB5 /* UBICoreDataStore.m */; };
+		1AE3C3CC1C105539000E3FB5 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C3CA1C105539000E3FB5 /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1AE3C33C1C0EFBDF000E3FB5 /* PBXContainerItemProxy */ = {
+		1AE3C3AA1C10547A000E3FB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1AE3C2CA1C0D8B77000E3FB5 /* Project object */;
+			containerPortal = 1AE3C3881C10547A000E3FB5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1AE3C3241C0EFB29000E3FB5;
-			remoteInfo = UBICoreDataApp;
+			remoteGlobalIDString = 1AE3C38F1C10547A000E3FB5;
+			remoteInfo = UBICoreDataTest;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AE3C2D41C0D8BB0000E3FB5 /* UBICoreDataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBICoreDataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AE3C2D91C0D8BB0000E3FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AE3C2DE1C0D8BC5000E3FB5 /* NSFetchedResultsController+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+UBICoreData.h"; sourceTree = "<group>"; };
-		1AE3C2DF1C0D8BC5000E3FB5 /* NSFetchedResultsController+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+UBICoreData.m"; sourceTree = "<group>"; };
-		1AE3C2E01C0D8BC5000E3FB5 /* NSFetchRequest+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+UBICoreData.h"; sourceTree = "<group>"; };
-		1AE3C2E11C0D8BC5000E3FB5 /* NSFetchRequest+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+UBICoreData.m"; sourceTree = "<group>"; };
-		1AE3C2E21C0D8BC5000E3FB5 /* NSManagedObject+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+UBICoreData.h"; sourceTree = "<group>"; };
-		1AE3C2E31C0D8BC5000E3FB5 /* NSManagedObject+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+UBICoreData.m"; sourceTree = "<group>"; };
-		1AE3C2E41C0D8BC5000E3FB5 /* NSManagedObjectContext+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+UBICoreData.h"; sourceTree = "<group>"; };
-		1AE3C2E51C0D8BC5000E3FB5 /* NSManagedObjectContext+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+UBICoreData.m"; sourceTree = "<group>"; };
-		1AE3C2E61C0D8BC5000E3FB5 /* UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreData.h; sourceTree = "<group>"; };
-		1AE3C2E71C0D8BC5000E3FB5 /* UBICoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataCommon.h; sourceTree = "<group>"; };
-		1AE3C2E81C0D8BC5000E3FB5 /* UBICoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataStore.h; sourceTree = "<group>"; };
-		1AE3C2E91C0D8BC5000E3FB5 /* UBICoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataStore.m; sourceTree = "<group>"; };
-		1AE3C2F01C0D9F38000E3FB5 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
-		1AE3C2FF1C0DA04B000E3FB5 /* UBICoreDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataStoreTests.m; sourceTree = "<group>"; };
-		1AE3C3011C0DA070000E3FB5 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
-		1AE3C3021C0DA070000E3FB5 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
-		1AE3C3031C0DA070000E3FB5 /* Child+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1AE3C3041C0DA070000E3FB5 /* Child+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1AE3C3051C0DA070000E3FB5 /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
-		1AE3C3061C0DA070000E3FB5 /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
-		1AE3C3071C0DA070000E3FB5 /* Parent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parent+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1AE3C3081C0DA070000E3FB5 /* Parent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1AE3C30D1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataTestUtils.h; sourceTree = "<group>"; };
-		1AE3C30E1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataTestUtils.m; sourceTree = "<group>"; };
-		1AE3C3251C0EFB29000E3FB5 /* UBICoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBICoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AE3C3281C0EFB29000E3FB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1AE3C3331C0EFB29000E3FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AE3C3361C0EFB29000E3FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1AE3C3381C0EFB29000E3FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AE3C3431C0F07C4000E3FB5 /* NSManagedObjectContext+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+UBICoreDataTests.m"; sourceTree = "<group>"; };
-		1AE3C3531C0FE63E000E3FB5 /* NSManagedObject+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+UBICoreDataTests.m"; sourceTree = "<group>"; };
-		1AE3C3551C100EFE000E3FB5 /* NSFetchRequest+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+UBICoreDataTests.m"; sourceTree = "<group>"; };
-		1AE3C3571C101AE2000E3FB5 /* NSFetchedResultsController+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+UBICoreDataTests.m"; sourceTree = "<group>"; };
+		1A087B701C10583800CAB9B4 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		1A087B711C10583800CAB9B4 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		1A087B721C10583800CAB9B4 /* Child+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1A087B731C10583800CAB9B4 /* Child+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1A087B741C10583800CAB9B4 /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
+		1A087B751C10583800CAB9B4 /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
+		1A087B761C10583800CAB9B4 /* Parent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1A087B771C10583800CAB9B4 /* Parent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1A087B7C1C10584200CAB9B4 /* NSFetchedResultsController+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+UBICoreDataTests.m"; sourceTree = "<group>"; };
+		1A087B7D1C10584200CAB9B4 /* NSFetchRequest+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+UBICoreDataTests.m"; sourceTree = "<group>"; };
+		1A087B7E1C10584200CAB9B4 /* NSManagedObject+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+UBICoreDataTests.m"; sourceTree = "<group>"; };
+		1A087B7F1C10584200CAB9B4 /* NSManagedObjectContext+UBICoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+UBICoreDataTests.m"; sourceTree = "<group>"; };
+		1A087B801C10584200CAB9B4 /* UBICoreDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataStoreTests.m; sourceTree = "<group>"; };
+		1A087B811C10584200CAB9B4 /* UBICoreDataTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataTestUtils.h; sourceTree = "<group>"; };
+		1A087B821C10584200CAB9B4 /* UBICoreDataTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataTestUtils.m; sourceTree = "<group>"; };
+		1AE3C3901C10547A000E3FB5 /* UBICoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBICoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE3C3941C10547A000E3FB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AE3C39F1C10547A000E3FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AE3C3A21C10547A000E3FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AE3C3A41C10547A000E3FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE3C3A91C10547A000E3FB5 /* UBICoreDataTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBICoreDataTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE3C3AF1C10547A000E3FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE3C3B91C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+UBICoreData.h"; sourceTree = "<group>"; };
+		1AE3C3BA1C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+UBICoreData.m"; sourceTree = "<group>"; };
+		1AE3C3BB1C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+UBICoreData.h"; sourceTree = "<group>"; };
+		1AE3C3BC1C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+UBICoreData.m"; sourceTree = "<group>"; };
+		1AE3C3BD1C1054F1000E3FB5 /* NSManagedObject+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+UBICoreData.h"; sourceTree = "<group>"; };
+		1AE3C3BE1C1054F1000E3FB5 /* NSManagedObject+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+UBICoreData.m"; sourceTree = "<group>"; };
+		1AE3C3BF1C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+UBICoreData.h"; sourceTree = "<group>"; };
+		1AE3C3C01C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+UBICoreData.m"; sourceTree = "<group>"; };
+		1AE3C3C11C1054F1000E3FB5 /* UBICoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreData.h; sourceTree = "<group>"; };
+		1AE3C3C21C1054F1000E3FB5 /* UBICoreDataCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataCommon.h; sourceTree = "<group>"; };
+		1AE3C3C31C1054F1000E3FB5 /* UBICoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBICoreDataStore.h; sourceTree = "<group>"; };
+		1AE3C3C41C1054F1000E3FB5 /* UBICoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBICoreDataStore.m; sourceTree = "<group>"; };
+		1AE3C3CB1C105539000E3FB5 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AE3C2D11C0D8BB0000E3FB5 /* Frameworks */ = {
+		1AE3C38D1C10547A000E3FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AE3C3221C0EFB29000E3FB5 /* Frameworks */ = {
+		1AE3C3A61C10547A000E3FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -94,152 +94,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AE3C2C91C0D8B77000E3FB5 = {
+		1AE3C3871C10547A000E3FB5 = {
 			isa = PBXGroup;
 			children = (
-				1AE3C2DD1C0D8BC5000E3FB5 /* UBICoreData */,
-				1AE3C3261C0EFB29000E3FB5 /* UBICoreDataApp */,
-				1AE3C2D61C0D8BB0000E3FB5 /* UBICoreDataTest */,
-				1AE3C2D51C0D8BB0000E3FB5 /* Products */,
+				1AE3C3B81C1054F1000E3FB5 /* UBICoreData */,
+				1AE3C3921C10547A000E3FB5 /* UBICoreDataTest */,
+				1AE3C3AC1C10547A000E3FB5 /* UBICoreDataTestTests */,
+				1AE3C3911C10547A000E3FB5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1AE3C2D51C0D8BB0000E3FB5 /* Products */ = {
+		1AE3C3911C10547A000E3FB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AE3C2D41C0D8BB0000E3FB5 /* UBICoreDataTest.xctest */,
-				1AE3C3251C0EFB29000E3FB5 /* UBICoreDataApp.app */,
+				1AE3C3901C10547A000E3FB5 /* UBICoreDataTest.app */,
+				1AE3C3A91C10547A000E3FB5 /* UBICoreDataTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AE3C2D61C0D8BB0000E3FB5 /* UBICoreDataTest */ = {
+		1AE3C3921C10547A000E3FB5 /* UBICoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
-				1AE3C2FE1C0D9FE9000E3FB5 /* TestData */,
-				1AE3C30D1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.h */,
-				1AE3C30E1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.m */,
-				1AE3C2FF1C0DA04B000E3FB5 /* UBICoreDataStoreTests.m */,
-				1AE3C3431C0F07C4000E3FB5 /* NSManagedObjectContext+UBICoreDataTests.m */,
-				1AE3C3531C0FE63E000E3FB5 /* NSManagedObject+UBICoreDataTests.m */,
-				1AE3C3551C100EFE000E3FB5 /* NSFetchRequest+UBICoreDataTests.m */,
-				1AE3C3571C101AE2000E3FB5 /* NSFetchedResultsController+UBICoreDataTests.m */,
-				1AE3C2D91C0D8BB0000E3FB5 /* Info.plist */,
+				1AE3C3CD1C10558D000E3FB5 /* TestData */,
+				1AE3C39F1C10547A000E3FB5 /* Assets.xcassets */,
+				1AE3C3A11C10547A000E3FB5 /* LaunchScreen.storyboard */,
+				1AE3C3A41C10547A000E3FB5 /* Info.plist */,
+				1AE3C3931C10547A000E3FB5 /* Supporting Files */,
 			);
 			path = UBICoreDataTest;
 			sourceTree = "<group>";
 		};
-		1AE3C2DD1C0D8BC5000E3FB5 /* UBICoreData */ = {
+		1AE3C3931C10547A000E3FB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1AE3C2DE1C0D8BC5000E3FB5 /* NSFetchedResultsController+UBICoreData.h */,
-				1AE3C2DF1C0D8BC5000E3FB5 /* NSFetchedResultsController+UBICoreData.m */,
-				1AE3C2E01C0D8BC5000E3FB5 /* NSFetchRequest+UBICoreData.h */,
-				1AE3C2E11C0D8BC5000E3FB5 /* NSFetchRequest+UBICoreData.m */,
-				1AE3C2E21C0D8BC5000E3FB5 /* NSManagedObject+UBICoreData.h */,
-				1AE3C2E31C0D8BC5000E3FB5 /* NSManagedObject+UBICoreData.m */,
-				1AE3C2E41C0D8BC5000E3FB5 /* NSManagedObjectContext+UBICoreData.h */,
-				1AE3C2E51C0D8BC5000E3FB5 /* NSManagedObjectContext+UBICoreData.m */,
-				1AE3C2E61C0D8BC5000E3FB5 /* UBICoreData.h */,
-				1AE3C2E71C0D8BC5000E3FB5 /* UBICoreDataCommon.h */,
-				1AE3C2E81C0D8BC5000E3FB5 /* UBICoreDataStore.h */,
-				1AE3C2E91C0D8BC5000E3FB5 /* UBICoreDataStore.m */,
+				1AE3C3941C10547A000E3FB5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AE3C3AC1C10547A000E3FB5 /* UBICoreDataTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A087B7C1C10584200CAB9B4 /* NSFetchedResultsController+UBICoreDataTests.m */,
+				1A087B7D1C10584200CAB9B4 /* NSFetchRequest+UBICoreDataTests.m */,
+				1A087B7E1C10584200CAB9B4 /* NSManagedObject+UBICoreDataTests.m */,
+				1A087B7F1C10584200CAB9B4 /* NSManagedObjectContext+UBICoreDataTests.m */,
+				1A087B801C10584200CAB9B4 /* UBICoreDataStoreTests.m */,
+				1A087B811C10584200CAB9B4 /* UBICoreDataTestUtils.h */,
+				1A087B821C10584200CAB9B4 /* UBICoreDataTestUtils.m */,
+				1AE3C3AF1C10547A000E3FB5 /* Info.plist */,
+			);
+			path = UBICoreDataTestTests;
+			sourceTree = "<group>";
+		};
+		1AE3C3B81C1054F1000E3FB5 /* UBICoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1AE3C3B91C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.h */,
+				1AE3C3BA1C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.m */,
+				1AE3C3BB1C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.h */,
+				1AE3C3BC1C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.m */,
+				1AE3C3BD1C1054F1000E3FB5 /* NSManagedObject+UBICoreData.h */,
+				1AE3C3BE1C1054F1000E3FB5 /* NSManagedObject+UBICoreData.m */,
+				1AE3C3BF1C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.h */,
+				1AE3C3C01C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.m */,
+				1AE3C3C11C1054F1000E3FB5 /* UBICoreData.h */,
+				1AE3C3C21C1054F1000E3FB5 /* UBICoreDataCommon.h */,
+				1AE3C3C31C1054F1000E3FB5 /* UBICoreDataStore.h */,
+				1AE3C3C41C1054F1000E3FB5 /* UBICoreDataStore.m */,
 			);
 			name = UBICoreData;
 			path = ../UBICoreData;
 			sourceTree = "<group>";
 		};
-		1AE3C2FE1C0D9FE9000E3FB5 /* TestData */ = {
+		1AE3C3CD1C10558D000E3FB5 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
-				1AE3C3011C0DA070000E3FB5 /* Child.h */,
-				1AE3C3021C0DA070000E3FB5 /* Child.m */,
-				1AE3C3031C0DA070000E3FB5 /* Child+CoreDataProperties.h */,
-				1AE3C3041C0DA070000E3FB5 /* Child+CoreDataProperties.m */,
-				1AE3C3051C0DA070000E3FB5 /* Parent.h */,
-				1AE3C3061C0DA070000E3FB5 /* Parent.m */,
-				1AE3C3071C0DA070000E3FB5 /* Parent+CoreDataProperties.h */,
-				1AE3C3081C0DA070000E3FB5 /* Parent+CoreDataProperties.m */,
-				1AE3C2EF1C0D9F38000E3FB5 /* TestModel.xcdatamodeld */,
+				1A087B701C10583800CAB9B4 /* Child.h */,
+				1A087B711C10583800CAB9B4 /* Child.m */,
+				1A087B721C10583800CAB9B4 /* Child+CoreDataProperties.h */,
+				1A087B731C10583800CAB9B4 /* Child+CoreDataProperties.m */,
+				1A087B741C10583800CAB9B4 /* Parent.h */,
+				1A087B751C10583800CAB9B4 /* Parent.m */,
+				1A087B761C10583800CAB9B4 /* Parent+CoreDataProperties.h */,
+				1A087B771C10583800CAB9B4 /* Parent+CoreDataProperties.m */,
+				1AE3C3CA1C105539000E3FB5 /* TestModel.xcdatamodeld */,
 			);
 			name = TestData;
-			sourceTree = "<group>";
-		};
-		1AE3C3261C0EFB29000E3FB5 /* UBICoreDataApp */ = {
-			isa = PBXGroup;
-			children = (
-				1AE3C3331C0EFB29000E3FB5 /* Assets.xcassets */,
-				1AE3C3351C0EFB29000E3FB5 /* LaunchScreen.storyboard */,
-				1AE3C3381C0EFB29000E3FB5 /* Info.plist */,
-				1AE3C3271C0EFB29000E3FB5 /* Supporting Files */,
-			);
-			path = UBICoreDataApp;
-			sourceTree = "<group>";
-		};
-		1AE3C3271C0EFB29000E3FB5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1AE3C3281C0EFB29000E3FB5 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AE3C2D31C0D8BB0000E3FB5 /* UBICoreDataTest */ = {
+		1AE3C38F1C10547A000E3FB5 /* UBICoreDataTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AE3C2DA1C0D8BB0000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTest" */;
+			buildConfigurationList = 1AE3C3B21C10547A000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTest" */;
 			buildPhases = (
-				1AE3C2D01C0D8BB0000E3FB5 /* Sources */,
-				1AE3C2D11C0D8BB0000E3FB5 /* Frameworks */,
-				1AE3C2D21C0D8BB0000E3FB5 /* Resources */,
+				1AE3C38C1C10547A000E3FB5 /* Sources */,
+				1AE3C38D1C10547A000E3FB5 /* Frameworks */,
+				1AE3C38E1C10547A000E3FB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1AE3C33D1C0EFBDF000E3FB5 /* PBXTargetDependency */,
 			);
 			name = UBICoreDataTest;
 			productName = UBICoreDataTest;
-			productReference = 1AE3C2D41C0D8BB0000E3FB5 /* UBICoreDataTest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 1AE3C3901C10547A000E3FB5 /* UBICoreDataTest.app */;
+			productType = "com.apple.product-type.application";
 		};
-		1AE3C3241C0EFB29000E3FB5 /* UBICoreDataApp */ = {
+		1AE3C3A81C10547A000E3FB5 /* UBICoreDataTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AE3C33B1C0EFB29000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataApp" */;
+			buildConfigurationList = 1AE3C3B51C10547A000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTestTests" */;
 			buildPhases = (
-				1AE3C3211C0EFB29000E3FB5 /* Sources */,
-				1AE3C3221C0EFB29000E3FB5 /* Frameworks */,
-				1AE3C3231C0EFB29000E3FB5 /* Resources */,
+				1AE3C3A51C10547A000E3FB5 /* Sources */,
+				1AE3C3A61C10547A000E3FB5 /* Frameworks */,
+				1AE3C3A71C10547A000E3FB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1AE3C3AB1C10547A000E3FB5 /* PBXTargetDependency */,
 			);
-			name = UBICoreDataApp;
-			productName = UBICoreDataApp;
-			productReference = 1AE3C3251C0EFB29000E3FB5 /* UBICoreDataApp.app */;
-			productType = "com.apple.product-type.application";
+			name = UBICoreDataTestTests;
+			productName = UBICoreDataTestTests;
+			productReference = 1AE3C3A91C10547A000E3FB5 /* UBICoreDataTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1AE3C2CA1C0D8B77000E3FB5 /* Project object */ = {
+		1AE3C3881C10547A000E3FB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Yuki Yasoshima";
 				TargetAttributes = {
-					1AE3C2D31C0D8BB0000E3FB5 = {
+					1AE3C38F1C10547A000E3FB5 = {
 						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 1AE3C3241C0EFB29000E3FB5;
 					};
-					1AE3C3241C0EFB29000E3FB5 = {
+					1AE3C3A81C10547A000E3FB5 = {
 						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 1AE3C38F1C10547A000E3FB5;
 					};
 				};
 			};
-			buildConfigurationList = 1AE3C2CD1C0D8B77000E3FB5 /* Build configuration list for PBXProject "UBICoreDataTest" */;
+			buildConfigurationList = 1AE3C38B1C10547A000E3FB5 /* Build configuration list for PBXProject "UBICoreDataTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,83 +248,83 @@
 				en,
 				Base,
 			);
-			mainGroup = 1AE3C2C91C0D8B77000E3FB5;
-			productRefGroup = 1AE3C2D51C0D8BB0000E3FB5 /* Products */;
+			mainGroup = 1AE3C3871C10547A000E3FB5;
+			productRefGroup = 1AE3C3911C10547A000E3FB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AE3C2D31C0D8BB0000E3FB5 /* UBICoreDataTest */,
-				1AE3C3241C0EFB29000E3FB5 /* UBICoreDataApp */,
+				1AE3C38F1C10547A000E3FB5 /* UBICoreDataTest */,
+				1AE3C3A81C10547A000E3FB5 /* UBICoreDataTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1AE3C2D21C0D8BB0000E3FB5 /* Resources */ = {
+		1AE3C38E1C10547A000E3FB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE3C3A31C10547A000E3FB5 /* LaunchScreen.storyboard in Resources */,
+				1AE3C3A01C10547A000E3FB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AE3C3231C0EFB29000E3FB5 /* Resources */ = {
+		1AE3C3A71C10547A000E3FB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE3C3371C0EFB29000E3FB5 /* LaunchScreen.storyboard in Resources */,
-				1AE3C3341C0EFB29000E3FB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1AE3C2D01C0D8BB0000E3FB5 /* Sources */ = {
+		1AE3C38C1C10547A000E3FB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE3C3501C0F0B88000E3FB5 /* Child+CoreDataProperties.m in Sources */,
-				1AE3C34F1C0F0B88000E3FB5 /* Child.m in Sources */,
-				1AE3C3511C0F0B88000E3FB5 /* Parent.m in Sources */,
-				1AE3C3521C0F0B88000E3FB5 /* Parent+CoreDataProperties.m in Sources */,
-				1AE3C3581C101AE2000E3FB5 /* NSFetchedResultsController+UBICoreDataTests.m in Sources */,
-				1AE3C3001C0DA04B000E3FB5 /* UBICoreDataStoreTests.m in Sources */,
-				1AE3C3561C100EFE000E3FB5 /* NSFetchRequest+UBICoreDataTests.m in Sources */,
-				1AE3C34C1C0F0B88000E3FB5 /* NSManagedObject+UBICoreData.m in Sources */,
-				1AE3C3541C0FE63E000E3FB5 /* NSManagedObject+UBICoreDataTests.m in Sources */,
-				1AE3C30F1C0DA0C7000E3FB5 /* UBICoreDataTestUtils.m in Sources */,
-				1AE3C3441C0F07C4000E3FB5 /* NSManagedObjectContext+UBICoreDataTests.m in Sources */,
-				1AE3C34D1C0F0B88000E3FB5 /* NSManagedObjectContext+UBICoreData.m in Sources */,
-				1AE3C34E1C0F0B88000E3FB5 /* UBICoreDataStore.m in Sources */,
-				1AE3C34B1C0F0B88000E3FB5 /* NSFetchRequest+UBICoreData.m in Sources */,
-				1AE3C34A1C0F0B88000E3FB5 /* NSFetchedResultsController+UBICoreData.m in Sources */,
+				1AE3C3CC1C105539000E3FB5 /* TestModel.xcdatamodeld in Sources */,
+				1AE3C3C61C1054F1000E3FB5 /* NSFetchRequest+UBICoreData.m in Sources */,
+				1AE3C3C81C1054F1000E3FB5 /* NSManagedObjectContext+UBICoreData.m in Sources */,
+				1AE3C3951C10547A000E3FB5 /* main.m in Sources */,
+				1AE3C3C51C1054F1000E3FB5 /* NSFetchedResultsController+UBICoreData.m in Sources */,
+				1AE3C3C71C1054F1000E3FB5 /* NSManagedObject+UBICoreData.m in Sources */,
+				1A087B791C10583800CAB9B4 /* Child+CoreDataProperties.m in Sources */,
+				1A087B781C10583800CAB9B4 /* Child.m in Sources */,
+				1AE3C3C91C1054F1000E3FB5 /* UBICoreDataStore.m in Sources */,
+				1A087B7B1C10583800CAB9B4 /* Parent+CoreDataProperties.m in Sources */,
+				1A087B7A1C10583800CAB9B4 /* Parent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AE3C3211C0EFB29000E3FB5 /* Sources */ = {
+		1AE3C3A51C10547A000E3FB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE3C3421C0EFC36000E3FB5 /* TestModel.xcdatamodeld in Sources */,
-				1AE3C3291C0EFB29000E3FB5 /* main.m in Sources */,
+				1A087B851C10584200CAB9B4 /* NSManagedObject+UBICoreDataTests.m in Sources */,
+				1A087B881C10584200CAB9B4 /* UBICoreDataTestUtils.m in Sources */,
+				1A087B871C10584200CAB9B4 /* UBICoreDataStoreTests.m in Sources */,
+				1A087B831C10584200CAB9B4 /* NSFetchedResultsController+UBICoreDataTests.m in Sources */,
+				1A087B841C10584200CAB9B4 /* NSFetchRequest+UBICoreDataTests.m in Sources */,
+				1A087B861C10584200CAB9B4 /* NSManagedObjectContext+UBICoreDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1AE3C33D1C0EFBDF000E3FB5 /* PBXTargetDependency */ = {
+		1AE3C3AB1C10547A000E3FB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1AE3C3241C0EFB29000E3FB5 /* UBICoreDataApp */;
-			targetProxy = 1AE3C33C1C0EFBDF000E3FB5 /* PBXContainerItemProxy */;
+			target = 1AE3C38F1C10547A000E3FB5 /* UBICoreDataTest */;
+			targetProxy = 1AE3C3AA1C10547A000E3FB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1AE3C3351C0EFB29000E3FB5 /* LaunchScreen.storyboard */ = {
+		1AE3C3A11C10547A000E3FB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AE3C3361C0EFB29000E3FB5 /* Base */,
+				1AE3C3A21C10547A000E3FB5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -331,19 +332,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1AE3C2CE1C0D8B77000E3FB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		1AE3C2CF1C0D8B77000E3FB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		1AE3C2DB1C0D8BB0000E3FB5 /* Debug */ = {
+		1AE3C3B01C10547A000E3FB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,19 +368,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = UBICoreDataTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTest";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBICoreDataApp.app/UBICoreDataApp";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1AE3C2DC1C0D8BB0000E3FB5 /* Release */ = {
+		1AE3C3B11C10547A000E3FB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -421,136 +406,86 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = UBICoreDataTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTest";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBICoreDataApp.app/UBICoreDataApp";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1AE3C3391C0EFB29000E3FB5 /* Debug */ = {
+		1AE3C3B31C10547A000E3FB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = UBICoreDataApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				INFOPLIST_FILE = UBICoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1AE3C33A1C0EFB29000E3FB5 /* Release */ = {
+		1AE3C3B41C10547A000E3FB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = UBICoreDataApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				INFOPLIST_FILE = UBICoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AE3C3B61C10547A000E3FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UBICoreDataTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBICoreDataTest.app/UBICoreDataTest";
+			};
+			name = Debug;
+		};
+		1AE3C3B71C10547A000E3FB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UBICoreDataTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ubiregi-inc..UBICoreDataTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBICoreDataTest.app/UBICoreDataTest";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AE3C2CD1C0D8B77000E3FB5 /* Build configuration list for PBXProject "UBICoreDataTest" */ = {
+		1AE3C38B1C10547A000E3FB5 /* Build configuration list for PBXProject "UBICoreDataTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AE3C2CE1C0D8B77000E3FB5 /* Debug */,
-				1AE3C2CF1C0D8B77000E3FB5 /* Release */,
+				1AE3C3B01C10547A000E3FB5 /* Debug */,
+				1AE3C3B11C10547A000E3FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AE3C2DA1C0D8BB0000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTest" */ = {
+		1AE3C3B21C10547A000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AE3C2DB1C0D8BB0000E3FB5 /* Debug */,
-				1AE3C2DC1C0D8BB0000E3FB5 /* Release */,
+				1AE3C3B31C10547A000E3FB5 /* Debug */,
+				1AE3C3B41C10547A000E3FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AE3C33B1C0EFB29000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataApp" */ = {
+		1AE3C3B51C10547A000E3FB5 /* Build configuration list for PBXNativeTarget "UBICoreDataTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AE3C3391C0EFB29000E3FB5 /* Debug */,
-				1AE3C33A1C0EFB29000E3FB5 /* Release */,
+				1AE3C3B61C10547A000E3FB5 /* Debug */,
+				1AE3C3B71C10547A000E3FB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -558,17 +493,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1AE3C2EF1C0D9F38000E3FB5 /* TestModel.xcdatamodeld */ = {
+		1AE3C3CA1C105539000E3FB5 /* TestModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1AE3C2F01C0D9F38000E3FB5 /* TestModel.xcdatamodel */,
+				1AE3C3CB1C105539000E3FB5 /* TestModel.xcdatamodel */,
 			);
-			currentVersion = 1AE3C2F01C0D9F38000E3FB5 /* TestModel.xcdatamodel */;
+			currentVersion = 1AE3C3CB1C105539000E3FB5 /* TestModel.xcdatamodel */;
 			path = TestModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1AE3C2CA1C0D8B77000E3FB5 /* Project object */;
+	rootObject = 1AE3C3881C10547A000E3FB5 /* Project object */;
 }
