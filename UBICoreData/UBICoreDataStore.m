@@ -88,8 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
         
         NSError* error = nil;
         if (![_storeCoordinator addPersistentStoreWithType:self.persistentStoreType
-                                                      configuration:nil URL:self.storeURL
-                                                            options:self.persistentStoreOptions
+                                             configuration:nil
+                                                       URL:self.storeURL
+                                                   options:self.persistentStoreOptions
                                                     error:&error]) {
 #ifdef DEBUG
             [NSException raise:UBICoreDataExceptionName format:@"%s - error: %@", __PRETTY_FUNCTION__, error];
