@@ -285,16 +285,16 @@
     [self waitForExpectationsWithTimeout:1.0 handler:NULL];
 }
 
-- (void)testIsPersisted
+- (void)testIsCommitted
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
     Parent *parent = [Parent insertInContext:dataStore.mainContext];
     
-    XCTAssertFalse(parent.isPersisted);
+    XCTAssertFalse(parent.isCommitted);
     
     [dataStore.mainContext save];
     
-    XCTAssertTrue(parent.isPersisted);
+    XCTAssertTrue(parent.isCommitted);
 }
 
 - (void)testObtainPermanentID

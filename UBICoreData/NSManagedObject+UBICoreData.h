@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
                              request:(void (^)(NSFetchRequest *request, NSManagedObjectContext *context))block
                           completion:(void (^)(NSArray<__kindof NSManagedObject *> *objects))completion;
 
-- (BOOL)isPersisted;
+- (BOOL)isCommitted;
 - (BOOL)obtainPermanentID;
 - (NSString *)objectIDString;
 
