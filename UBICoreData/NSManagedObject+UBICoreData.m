@@ -209,7 +209,7 @@ NS_ASSUME_NONNULL_BEGIN
     }];
 }
 
-- (BOOL)isPersisted
+- (BOOL)isCommitted
 {
     return [[self committedValuesForKeys:nil] count] > 0;
 }
