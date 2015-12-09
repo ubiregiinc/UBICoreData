@@ -121,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
     return objects;
 }
 
-+ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(id)predicateOrString, ...
++ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
@@ -130,7 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
     } context:context];
 }
 
-+ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context predicate:(id)predicateOrString, ...
++ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
@@ -140,7 +140,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
                            sortByKey:(nullable NSString *)key
                            ascending:(BOOL)ascending
-                           predicate:(id)predicateOrString, ...
+                           predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
@@ -159,7 +159,7 @@ NS_ASSUME_NONNULL_BEGIN
     return [objects count] ? objects[0] : nil;
 }
 
-+ (instancetype)fetchOrInsertSingleInContext:(NSManagedObjectContext *)context predicate:(id)predicateOrString, ...
++ (instancetype)fetchOrInsertSingleInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     

@@ -32,16 +32,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block
                                                   context:(NSManagedObjectContext *)context;
 + (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context
-                                              predicate:(id)predicateOrString, ...;
+                                              predicate:(nullable id)predicateOrString, ...;
 
 + (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
-                           predicate:(id)predicateOrString, ...;
+                           predicate:(nullable id)predicateOrString, ...;
 + (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
                            sortByKey:(nullable NSString *)key
                            ascending:(BOOL)ascending
-                           predicate:(id)predicateOrString, ...;
+                           predicate:(nullable id)predicateOrString, ...;
 + (instancetype)fetchOrInsertSingleInContext:(NSManagedObjectContext *)context
-                                   predicate:(id)predicateOrString, ...;
+                                   predicate:(nullable id)predicateOrString, ...;
 
 + (void)fetchAsynchronouslyToContext:(NSManagedObjectContext *)context
                              request:(void (^)(NSFetchRequest *request, NSManagedObjectContext *context))block

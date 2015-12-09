@@ -14,7 +14,7 @@
         va_end(args); \
     } else if ([predicateOrString isKindOfClass:[NSPredicate class]]) { \
         predicate = predicateOrString; \
-    } else { \
+    } else if (predicateOrString) { \
         NSAssert(0, @"invalid predicate: %@", predicateOrString); \
     }
 
