@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)sortByKey:(NSString *)key ascending:(BOOL)ascending;
 - (void)sortByKey:(NSString *)key ascending:(BOOL)ascending comparator:(NSComparator)cmptr;
-- (void)setPredicateOrString:(id)predicateOrString, ...;
+- (void)setPredicateOrString:(nullable id)predicateOrString, ...;
 
 + (void)setIncludesSubentitiesByDefault:(BOOL)includesSubentities;
 + (BOOL)includesSubentitiesByDefault;

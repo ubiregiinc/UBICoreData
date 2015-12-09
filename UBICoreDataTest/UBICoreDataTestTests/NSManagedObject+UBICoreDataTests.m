@@ -69,6 +69,18 @@
     XCTAssertEqualObjects(parent, fetchedParent);
 }
 
+- (void)testPredicateOrStringByNil
+{
+    UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
+    [Parent insertInContext:dataStore.mainContext];
+    [Parent insertInContext:dataStore.mainContext];
+    [Parent insertInContext:dataStore.mainContext];
+    
+    NSArray *fetchedParents = [Parent fetchInContext:dataStore.mainContext predicate:nil];
+    
+    XCTAssertEqual(fetchedParents.count, 3);
+}
+
 - (void)testDelete
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];

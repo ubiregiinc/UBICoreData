@@ -38,7 +38,7 @@ static BOOL _ubr_includesSubentities = NO;
     [self setSortDescriptors:descriptors];
 }
 
-- (void)setPredicateOrString:(id)predicateOrString, ...
+- (void)setPredicateOrString:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
