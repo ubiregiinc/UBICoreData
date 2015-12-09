@@ -80,4 +80,18 @@
     XCTAssertTrue(dataStore.storeExists);
 }
 
+- (void)testCreateDataStoreWithModel {
+    NSURL* url = [[NSBundle mainBundle] URLForResource:[UBICoreDataTestUtils testModelName] withExtension:@"momd"];
+    NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
+    NSURL *documentDirectory = [UBICoreDataTestUtils documentsDirectory];
+    NSURL *storeURL = [documentDirectory URLByAppendingPathComponent:@"Test.sqlite"];
+    UBICoreDataStore *dataStore = [[UBICoreDataStore alloc] initWithModel:model
+                                                                 storeURL:storeURL
+                                                      persistentStoreType:NSSQLiteStoreType
+                                                   persistentStoreOptions:[UBICoreDataStore defaultPersistentStoreOptions]];
+    
+    XCTAssertEqualObjects(dataStore.managedObjectModel, model);
+    XCTAssertNil(dataStore.modelName);
+}
+
 @end
