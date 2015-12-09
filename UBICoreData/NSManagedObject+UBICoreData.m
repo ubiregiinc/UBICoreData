@@ -176,7 +176,7 @@ NS_ASSUME_NONNULL_BEGIN
                              request:(void (^)(NSFetchRequest *request, NSManagedObjectContext *context))block
                           completion:(void (^)(NSArray<__kindof NSManagedObject *> *objects))completion
 {
-    NSManagedObjectContext *bgContext = [NSManagedObjectContext privateQueueContextWithParentContext:context];
+    NSManagedObjectContext *bgContext = [context newPrivateQueueContext];
     
     [bgContext performBlock:^{
         NSFetchRequest *bgRequest = [NSFetchRequest fetchRequestWithEntity:[self class] context:bgContext];

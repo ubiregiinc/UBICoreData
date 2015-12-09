@@ -44,21 +44,21 @@
     XCTAssertEqualObjects(readParent.name, @"test_name");
 }
 
-- (void)testCreateMainQueueContext
+- (void)testNewMainQueueContext
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
     
-    NSManagedObjectContext *context = [NSManagedObjectContext mainQueueContextWithParentContext:dataStore.mainContext];
+    NSManagedObjectContext *context = [dataStore.mainContext newMainQueueContext];
     
     XCTAssertEqual(context.concurrencyType, NSMainQueueConcurrencyType);
     XCTAssertEqualObjects(context.parentContext, dataStore.mainContext);
 }
 
-- (void)testCreatePrivateQueueContext
+- (void)testNewPrivateQueueContext
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
     
-    NSManagedObjectContext *context = [NSManagedObjectContext privateQueueContextWithParentContext:dataStore.mainContext];
+    NSManagedObjectContext *context = [dataStore.mainContext newPrivateQueueContext];
     
     XCTAssertEqual(context.concurrencyType, NSPrivateQueueConcurrencyType);
     XCTAssertEqualObjects(context.parentContext, dataStore.mainContext);
