@@ -12,18 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation NSManagedObjectContext (UBICoreData)
 
-+ (NSManagedObjectContext *)mainQueueContextWithParentContext:(NSManagedObjectContext *)parentContext
+- (NSManagedObjectContext *)newMainQueueContext
 {
     NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    context.parentContext = parentContext;
+    context.parentContext = self;
     
     return context;
 }
 
-+ (NSManagedObjectContext *)privateQueueContextWithParentContext:(NSManagedObjectContext *)parentContext
+- (NSManagedObjectContext *)newPrivateQueueContext
 {
     NSManagedObjectContext *context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-    context.parentContext = parentContext;
+    context.parentContext = self;
     
     return context;
 }

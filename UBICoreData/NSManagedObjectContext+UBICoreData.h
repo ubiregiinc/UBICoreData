@@ -11,8 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSManagedObjectContext (UBICoreData)
 
-+ (NSManagedObjectContext *)mainQueueContextWithParentContext:(NSManagedObjectContext *)parentContext;
-+ (NSManagedObjectContext *)privateQueueContextWithParentContext:(NSManagedObjectContext *)parentContext;
+- (NSManagedObjectContext *)newMainQueueContext;
+- (NSManagedObjectContext *)newPrivateQueueContext;
 
 - (BOOL)save;
 - (BOOL)saveToPersistentStore;
