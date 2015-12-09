@@ -27,12 +27,22 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL storeExists;
 
 - (instancetype)init NS_UNAVAILABLE;
+
 - (instancetype)initWithModelName:(NSString *)modelName
                          storeURL:(NSURL *)storeURL;
+
 - (instancetype)initWithModelName:(NSString *)modelName
                          storeURL:(NSURL *)storeURL
               persistentStoreType:(NSString *)storeType
            persistentStoreOptions:(NSDictionary *)storeOptions NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)initWithModel:(NSManagedObjectModel *)model
+                     storeURL:(NSURL *)storeURL;
+
+- (instancetype)initWithModel:(NSManagedObjectModel *)model
+                     storeURL:(NSURL *)storeURL
+          persistentStoreType:(NSString *)storeType
+       persistentStoreOptions:(NSDictionary *)storeOptions NS_DESIGNATED_INITIALIZER;
 
 + (NSDictionary *)defaultPersistentStoreOptions;
 

@@ -50,6 +50,30 @@ NS_ASSUME_NONNULL_BEGIN
     return self;
 }
 
+- (instancetype)initWithModel:(NSManagedObjectModel *)model
+                     storeURL:(NSURL *)storeURL
+{
+    return [self initWithModel:model
+                      storeURL:storeURL
+           persistentStoreType:NSSQLiteStoreType
+        persistentStoreOptions:[[self class] defaultPersistentStoreOptions]];
+}
+
+- (instancetype)initWithModel:(NSManagedObjectModel *)model
+                     storeURL:(NSURL *)storeURL
+          persistentStoreType:(NSString *)storeType
+       persistentStoreOptions:(NSDictionary *)storeOptions
+{
+    self = [super init];
+    if (self) {
+        _model = model;
+        self.storeURL = storeURL;
+        self.persistentStoreType = storeType;
+        self.persistentStoreOptions = storeOptions;
+    }
+    return self;
+}
+
 - (NSManagedObjectContext *)mainContext
 {
     if (!_mainContext) {
