@@ -9,8 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^UBICoreDataSaveCompletionBlock)(BOOL success);
-
 @interface NSManagedObjectContext (UBICoreData)
 
 + (NSManagedObjectContext *)mainQueueContextWithParentContext:(NSManagedObjectContext *)parentContext;
