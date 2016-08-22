@@ -301,11 +301,16 @@
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
     Parent *parent1 = [Parent insertInContext:dataStore.mainContext];
-    Parent *parent2 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent5 = [Parent insertInContext:dataStore.mainContext];
     Parent *parent3 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent4 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent2 = [Parent insertInContext:dataStore.mainContext];
+    
     parent1.name = @"1";
-    parent2.name = @"2";
+    parent5.name = @"5";
     parent3.name = @"3";
+    parent4.name = @"4";
+    parent2.name = @"2";
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"fetch completion"];
     
@@ -314,8 +319,9 @@
         [request sortByKey:@"name" ascending:NO];
     } completion:^(NSArray<__kindof NSManagedObject *> * _Nonnull objects) {
         XCTAssertEqual(objects.count, 2);
-        XCTAssertEqualObjects([objects[0] name], @"3");
-        XCTAssertEqualObjects([objects[1] name], @"2");
+        
+        XCTAssertEqualObjects([objects[0] name], @"5");
+        XCTAssertEqualObjects([objects[1] name], @"4");
         
         [expectation fulfill];
     }];
