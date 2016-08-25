@@ -297,6 +297,38 @@
     [self waitForExpectationsWithTimeout:1.0 handler:NULL];
 }
 
+- (void)testFetchAsynchronouslyWithFetchLimitAndSort
+{
+    UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];
+    Parent *parent1 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent5 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent3 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent4 = [Parent insertInContext:dataStore.mainContext];
+    Parent *parent2 = [Parent insertInContext:dataStore.mainContext];
+    
+    parent1.name = @"1";
+    parent5.name = @"5";
+    parent3.name = @"3";
+    parent4.name = @"4";
+    parent2.name = @"2";
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@"fetch completion"];
+    
+    [Parent fetchAsynchronouslyToContext:dataStore.mainContext request:^(NSFetchRequest * _Nonnull request, NSManagedObjectContext * _Nonnull context) {
+        request.fetchLimit = 2;
+        [request sortByKey:@"name" ascending:NO];
+    } completion:^(NSArray<__kindof NSManagedObject *> * _Nonnull objects) {
+        XCTAssertEqual(objects.count, 2);
+        
+        XCTAssertEqualObjects([objects[0] name], @"5");
+        XCTAssertEqualObjects([objects[1] name], @"4");
+        
+        [expectation fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:1.0 handler:NULL];
+}
+
 - (void)testIsCommitted
 {
     UBICoreDataStore *dataStore = [UBICoreDataTestUtils createTestDataStore];

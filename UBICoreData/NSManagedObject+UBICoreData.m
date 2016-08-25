@@ -186,14 +186,13 @@ NS_ASSUME_NONNULL_BEGIN
         }
         
         [bgRequest setResultType:NSManagedObjectIDResultType];
-        [bgRequest setSortDescriptors:nil];
         
         NSError *bgError = nil;
-        NSArray<__kindof NSManagedObject *> *bgObjects = [bgContext executeFetchRequest:bgRequest error:&bgError];
+        NSArray *objectIDs = [bgContext executeFetchRequest:bgRequest error:&bgError];
         
         [context performBlock:^{
             NSError *error = nil;
-            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF IN %@", bgObjects];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF IN %@", objectIDs];
             NSFetchRequest *request	= [NSFetchRequest fetchRequestWithEntity:[self class] context:context];
             
             if (block) {
