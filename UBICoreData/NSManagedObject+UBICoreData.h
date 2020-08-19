@@ -27,25 +27,25 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSUInteger)countWithRequest:(void (^)(NSFetchRequest *request))block
                        context:(NSManagedObjectContext *)context;
 
-+ (instancetype)fetchWithObjectID:(NSManagedObjectID *)objectID context:(NSManagedObjectContext *)context;
++ (nullable instancetype)fetchWithObjectID:(NSManagedObjectID *)objectID context:(NSManagedObjectContext *)context;
 
-+ (NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block
-                                                  context:(NSManagedObjectContext *)context;
-+ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context
-                                              predicate:(nullable id)predicateOrString, ...;
++ (nullable NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block
+                                                           context:(NSManagedObjectContext *)context;
++ (nullable NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context
+                                                       predicate:(nullable id)predicateOrString, ...;
 
-+ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
-                           predicate:(nullable id)predicateOrString, ...;
-+ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
-                           sortByKey:(nullable NSString *)key
-                           ascending:(BOOL)ascending
-                           predicate:(nullable id)predicateOrString, ...;
++ (nullable instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
+                                    predicate:(nullable id)predicateOrString, ...;
++ (nullable instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
+                                    sortByKey:(nullable NSString *)key
+                                    ascending:(BOOL)ascending
+                                    predicate:(nullable id)predicateOrString, ...;
 + (instancetype)fetchOrInsertSingleInContext:(NSManagedObjectContext *)context
                                    predicate:(nullable id)predicateOrString, ...;
 
 + (void)fetchAsynchronouslyToContext:(NSManagedObjectContext *)context
                              request:(void (^)(NSFetchRequest *request, NSManagedObjectContext *context))block
-                          completion:(void (^)(NSArray<__kindof NSManagedObject *> *objects))completion;
+                          completion:(void (^)(NSArray<__kindof NSManagedObject *> * _Nullable objects))completion;
 
 - (BOOL)isCommitted;
 - (BOOL)obtainPermanentID;
