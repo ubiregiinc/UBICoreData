@@ -81,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
     return count;
 }
 
-+ (instancetype)fetchWithObjectID:(NSManagedObjectID *)objectID context:(NSManagedObjectContext *)context
++ (nullable instancetype)fetchWithObjectID:(NSManagedObjectID *)objectID context:(NSManagedObjectContext *)context
 {
     id object = [context objectRegisteredForID:objectID];
     
@@ -101,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
     return object;
 }
 
-+ (NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block context:(NSManagedObjectContext *)context
++ (nullable NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block context:(NSManagedObjectContext *)context
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntity:[self class] context:context];
     
@@ -121,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
     return objects;
 }
 
-+ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
++ (nullable NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
@@ -130,17 +130,17 @@ NS_ASSUME_NONNULL_BEGIN
     } context:context];
 }
 
-+ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
++ (nullable instancetype)fetchSingleInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
     return [self fetchSingleInContext:context sortByKey:nil ascending:NO predicate:predicate];
 }
 
-+ (instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
-                           sortByKey:(nullable NSString *)key
-                           ascending:(BOOL)ascending
-                           predicate:(nullable id)predicateOrString, ...
++ (nullable instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
+                                    sortByKey:(nullable NSString *)key
+                                    ascending:(BOOL)ascending
+                                    predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     
@@ -174,7 +174,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)fetchAsynchronouslyToContext:(NSManagedObjectContext *)context
                              request:(void (^)(NSFetchRequest *request, NSManagedObjectContext *context))block
-                          completion:(void (^)(NSArray<__kindof NSManagedObject *> *objects))completion
+                          completion:(void (^)(NSArray<__kindof NSManagedObject *> * _Nullable objects))completion
 {
     NSManagedObjectContext *bgContext = [context newPrivateQueueContext];
     
