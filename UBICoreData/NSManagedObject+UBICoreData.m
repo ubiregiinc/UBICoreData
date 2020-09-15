@@ -101,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
     return object;
 }
 
-+ (nullable NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block context:(NSManagedObjectContext *)context
++ (NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block context:(NSManagedObjectContext *)context
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntity:[self class] context:context];
     
@@ -118,10 +118,10 @@ NS_ASSUME_NONNULL_BEGIN
     }
 #endif
     
-    return objects;
+    return objects ?: @[];
 }
 
-+ (nullable NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
++ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context predicate:(nullable id)predicateOrString, ...
 {
     UBI_SET_PREDICATE_WITH_VARIADIC_ARGS
     

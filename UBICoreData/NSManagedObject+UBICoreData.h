@@ -29,10 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable instancetype)fetchWithObjectID:(NSManagedObjectID *)objectID context:(NSManagedObjectContext *)context;
 
-+ (nullable NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block
-                                                           context:(NSManagedObjectContext *)context;
-+ (nullable NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context
-                                                       predicate:(nullable id)predicateOrString, ...;
++ (NSArray<__kindof NSManagedObject *> *)fetchWithRequest:(void (^)(NSFetchRequest *request))block
+                                                  context:(NSManagedObjectContext *)context;
++ (NSArray<__kindof NSManagedObject *> *)fetchInContext:(NSManagedObjectContext *)context
+                                              predicate:(nullable id)predicateOrString, ...;
 
 + (nullable instancetype)fetchSingleInContext:(NSManagedObjectContext *)context
                                     predicate:(nullable id)predicateOrString, ...;

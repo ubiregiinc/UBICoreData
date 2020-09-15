@@ -312,6 +312,8 @@
     parent4.name = @"4";
     parent2.name = @"2";
     
+    [dataStore.mainContext saveToPersistentStore];
+    
     XCTestExpectation *expectation = [self expectationWithDescription:@"fetch completion"];
     
     [Parent fetchAsynchronouslyToContext:dataStore.mainContext request:^(NSFetchRequest * _Nonnull request, NSManagedObjectContext * _Nonnull context) {
