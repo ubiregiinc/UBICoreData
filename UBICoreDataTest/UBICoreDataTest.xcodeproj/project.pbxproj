@@ -165,7 +165,7 @@
 				1AE3C3C41C1054F1000E3FB5 /* UBICoreDataStore.m */,
 			);
 			name = UBICoreData;
-			path = ../UBICoreData;
+			path = ../Sources/UBICoreData;
 			sourceTree = "<group>";
 		};
 		1AE3C3CD1C10558D000E3FB5 /* TestData */ = {
