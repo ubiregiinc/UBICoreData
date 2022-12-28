@@ -53,3 +53,13 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Swift Package
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc

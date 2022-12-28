@@ -1,0 +1,1 @@
+../NSManagedObjectContext+UBICoreData.h
