@@ -1,0 +1,1 @@
+../NSFetchedResultsController+UBICoreData.h

@@ -198,7 +198,7 @@
 				1AED9E8C1C0C393500082D17 /* UBICoreDataStore.m */,
 			);
 			name = UBICoreData;
-			path = ../../UBICoreData;
+			path = ../../Sources/UBICoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

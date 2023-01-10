@@ -1,0 +1,1 @@
+../NSManagedObject+UBICoreData.h

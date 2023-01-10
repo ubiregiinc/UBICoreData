@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '12.0'
   s.requires_arc = true
   s.source       = { :git => 'https://github.com/ubiregiinc/UBICoreData.git', :tag => s.version.to_s }
-  s.source_files = 'UBICoreData/*'
+  s.source_files = 'Sources/UBICoreData/*'
   s.framework    = 'CoreData'
 end
