@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSManagedObjectContext *)newPrivateQueueContext;
 
 - (BOOL)save;
+- (BOOL)saveWithError:(NSError **)error;
 - (BOOL)saveToPersistentStore;
+- (BOOL)saveToPersistentStoreWithError:(NSError **)error;
 
 @end
 
