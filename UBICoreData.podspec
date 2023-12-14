@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'UBICoreData'
-  s.version      = '0.0.7'
+  s.version      = '0.0.8'
   s.summary      = 'CoreData wrapper for iOS'
   s.homepage     = 'https://github.com/ubiregiinc/UBICoreData'
   s.license      = { :type => 'MIT' }
