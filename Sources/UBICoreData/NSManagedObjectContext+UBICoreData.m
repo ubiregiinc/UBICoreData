@@ -30,16 +30,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)save
 {
+    return [self saveWithError:nil];
+}
+
+- (BOOL)saveWithError:(NSError **)error
+{
     if (![self hasChanges]) {
         return YES;
     }
     
-    NSError* error = nil;
+    NSError* localError = nil;
     
-    if (![self save:&error]) {
+    if (![self save:&localError]) {
 #ifdef DEBUG
-        NSLog(@"%s - error: %@", __PRETTY_FUNCTION__, [error userInfo]);
+        NSLog(@"%s - error: %@", __PRETTY_FUNCTION__, [localError userInfo]);
 #endif
+        if (error) {
+            *error = localError;
+        }
+        
         return NO;
     }
     
@@ -47,6 +56,11 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (BOOL)saveToPersistentStore
+{
+    return [self saveToPersistentStoreWithError:nil];
+}
+
+- (BOOL)saveToPersistentStoreWithError:(NSError **)error
 {
     NSSet *insertedObjects = self.insertedObjects;
     if (insertedObjects.count > 0) {
@@ -58,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
         }
     }
     
-    if ([self save]) {
+    if ([self saveWithError:error]) {
         NSManagedObjectContext *context = [self parentContext];
         
         if (!context) {
@@ -68,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
         __block BOOL save = NO;
         
         [context performBlockAndWait:^{
-            save = [context saveToPersistentStore];
+            save = [context saveToPersistentStoreWithError:error];
         }];
         
         return save;
