@@ -9,5 +9,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source       = { :git => 'https://github.com/ubiregiinc/UBICoreData.git', :tag => s.version.to_s }
   s.source_files = 'Sources/UBICoreData/*'
+  s.resource_bundles = {'UBICoreData' => ['Sources/UBICoreData/PrivacyInfo.xcprivacy']}
   s.framework    = 'CoreData'
 end
