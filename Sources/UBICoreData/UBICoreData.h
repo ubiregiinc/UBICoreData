@@ -10,3 +10,5 @@
 #import "NSFetchRequest+UBICoreData.h"
 #import "NSManagedObject+UBICoreData.h"
 #import "NSManagedObjectContext+UBICoreData.h"
+// for Swift Package
+#import "UBICoreDataCommon.h"
