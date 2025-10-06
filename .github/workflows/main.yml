@@ -24,4 +24,4 @@ jobs:
 
       - name: Run tests
         run:
-          xcodebuild -project UBICoreDataTest/UBICoreDataTest.xcodeproj -scheme UBICoreDataTest -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' clean test
+          xcodebuild -project UBICoreDataTest/UBICoreDataTest.xcodeproj -scheme UBICoreDataTest -configuration Debug OBJROOT=build -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17' clean test
